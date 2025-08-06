@@ -77,7 +77,6 @@ class Quiz01 {
     }
 
     // 문제 9: 점수에 따른 등급 출력 (점수가 90점 이상이면 A, 80점 이상이면 B, 아니면 C)
-    val score = 89
     fun problem09(score: Int): String {
         val result = if (score >= 90) "A"
         else if (score >= 80) "B"
