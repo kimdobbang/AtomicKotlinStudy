@@ -1,4 +1,6 @@
 package com.kimdoi.study.week02
+import kotlin.math.PI
+
 
 class Quiz02 {
     fun runAll() {
@@ -10,7 +12,15 @@ class Quiz02 {
         // 필요 시 문제 더 추가 가능
     }
 
+    // 1.https://dmoj.ca/problem/dmopc14c5p1
     fun problem01() {
+        val br = System.`in`.bufferedReader()
+        val r = br.readLine().toDouble()
+        val h = br.readLine().toDouble()
+
+        val v = (PI * r * r * h) / 3
+        System.out.printf("%.2f", v)
+        System.out.println()
     }
 
     // 문제 2:
@@ -23,13 +33,9 @@ class Quiz02 {
 
     // 문제 4:
     fun problem04() {
-        val name: String? = "Kotlin"
-        println(name ?: "Unknown")
     }
 
     // 문제 5:
     fun problem05() {
-        val result = "answer"
-        println(result)
     }
 }
