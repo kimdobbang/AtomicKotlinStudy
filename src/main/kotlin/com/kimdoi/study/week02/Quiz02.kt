@@ -23,19 +23,31 @@ class Quiz02 {
         System.out.println()
     }
 
-    // 문제 2:
+    // 2.https://dmoj.ca/problem/ccc19j1
     fun problem02() {
     }
 
-    // 문제 3:
+    // 3.https://dmoj.ca/problem/ccc18j1
     fun problem03() {
     }
 
-    // 문제 4:
+    // 4.https://dmoj.ca/problem/coci06c5p1
     fun problem04() {
     }
 
-    // 문제 5:
+    // 5.https://dmoj.ca/problem/ccc18j2
     fun problem05() {
+    }
+
+    // 6.https://dmoj.ca/problem/coci16c1p1
+    fun problem06() {
+    }
+
+    // 7.https://dmoj.ca/problem/ccc00s1
+    fun problem07() {
+    }
+
+    // 8.https://dmoj.ca/problem/ccc08j2
+    fun problem08() {
     }
 }
