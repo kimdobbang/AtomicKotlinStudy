@@ -6,5 +6,5 @@ import com.kimdoi.study.week03.Quiz03
 fun main() {
 //    Quiz01().runAll()
 //    Quiz02().runAll()
-    Quiz03().runAll()
+    Quiz03().problem02()
 }
