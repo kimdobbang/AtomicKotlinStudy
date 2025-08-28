@@ -1,6 +1,7 @@
 package com.kimdoi.study.week03
 import javax.swing.plaf.synth.SynthTextAreaUI
 import kotlin.math.PI
+import kotlin.math.min
 
 
 class Quiz03 {
@@ -19,16 +20,21 @@ class Quiz03 {
     // 1.https://dmoj.ca/problem/ccc18s1
     fun problem01() {
         val br = System.`in`.bufferedReader()
-        val n = br.readLine().toInt()
+        val n = br.readLine().trim().toInt()
         val arr = IntArray(n) {br.readLine().trim().toInt()}
         arr.sort()
 
-        var minVal = Double.POSITIVE_INFINITY
-        for (i in 1 until n - 1) {
+//        var minVal = Double.POSITIVE_INFINITY
+        var minVal = (arr[2] - arr[0]) / 2.0 //Double.POSITIVE_INFINITY대신 첫 값으로 초기화 하는 것도 괜찮을 것 같다.
+
+         // for (i in 1 until n - 1) {
+        // 이미 i=1 처리했으니 2부터
+        for (i in 2 until n - 2) {
             val size = (arr[i + 1] - arr[i - 1]) / 2.0
-            if (size < minVal) {
-                minVal = size
-            }
+            // if (size < minVal) {
+               // minVal = size
+           // }
+            minVal = min(minVal, size) // 조건문 보다는 이렇게 쓰는게 의도가 더 잘드러나는 것 같다.
         }
         println("%.1f".format(minVal))
     }
